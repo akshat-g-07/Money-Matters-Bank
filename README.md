@@ -17,7 +17,7 @@ The application was built using the following technologies:
 3. CSS
 4. JS
 
-#Future Features
+# Future Features
 As the banking application developer (as in me) continues to grow and develop, the following features are planned to be added in the near future:
 
 1. Suitable for various devices (RWD)
