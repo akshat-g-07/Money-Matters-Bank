@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+body {
+  margin: 0;
+}
+
+.brand,
+.brand_name {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  letter-spacing: 2px;
+}
+
+.header_div.active {
+  background-color: rgba(205, 205, 240, 1.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  height: 20%;
+}
+
+.logo_brand.active {
+  margin-left: 50px;
+  padding-left: 40px;
+  margin-right: 0;
+}
+
+.logo.active {
+  height: 25%;
+  width: 25%;
+  margin-right: 10px;
+  padding: 0px;
+}
+
+.brand.active {
+  padding: 0px;
+  margin: 0px;
+  display: flex;
+  font-weight: bolder;
+  font-size: 75px;
+  color: #cccccc;
+  scale: 1;
+  text-align: left;
+  text-shadow: black 1px 0 10px;
+}
+
+.nav_bar.active,
+.nav_bar_ul.active {
+  display: flex;
+  align-items: center;
+  float: left;
+  padding: 0;
+  margin-left: 50px;
+}
+
+.nav_bar_ul li {
+  padding: 40px;
+  list-style: none;
+  font-family: "Roboto", sans-serif;
+}
+
+.nav_bar_ul a {
+  text-decoration: none;
+}
+
+.button_class.active {
+  margin-left: auto;
+  margin-right: 40px;
+  padding: 0px;
+  height: 65px;
+  width: 125px;
+  border-radius: 25px;
+  align-items: center;
+  background-color: transparent;
+  box-shadow: none;
+  font-family: "Roboto", sans-serif;
+}
+
+.header_div button:hover {
+  background-color: black;
+  color: antiquewhite;
+}
