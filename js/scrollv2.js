@@ -12,5 +12,10 @@ window.addEventListener("scroll", function () {
     element01.style.width = Size01 + "px";
     element02.style.fontSize = Size02 + "px";
     element03.style.height = h + "px";
+  } else {
+    element01.style.height = "100px";
+    element01.style.width = "100px";
+    element02.style.fontSize = "81.8181px";
+    element03.style.height = "150px";
   }
 });
