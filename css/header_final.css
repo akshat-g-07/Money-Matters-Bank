@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans&display=swap");
+
+body {
+  margin: 0;
+}
+
+.brand,
+.brand_name {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  letter-spacing: 2px;
+}
+
+.header_div {
+  background-color: rgba(205, 205, 240, 0.6);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  z-index: 5;
+}
+
+.logo_brand {
+  margin: 30px;
+  padding-left: 50px;
+  display: flex;
+  align-items: center;
+}
+
+.brand {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.nav_bar,
+.nav_bar_ul {
+  display: flex;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+
+.nav_bar_ul li {
+  padding: 40px;
+  list-style: none;
+  font-family: "Roboto", sans-serif;
+}
+
+.nav_bar_ul a {
+  text-decoration: none;
+}
+
+.button_class {
+  margin-left: auto;
+  margin-right: 45px;
+  height: 65px;
+  width: 125px;
+  border-radius: 25px;
+  align-items: center;
+  background-color: transparent;
+  box-shadow: 0px 3px 6px rgb(0, 14, 53);
+  font-family: "Roboto", sans-serif;
+}
+
+.button_class a {
+  color: black;
+}
+
+.button_class:hover a,
+.button_class:hover {
+  background-color: black;
+  color: antiquewhite;
+}
