@@ -1,0 +1,36 @@
+.brand_intro {
+  margin-top: 210px;
+  margin-left: 175px;
+  margin-right: 175px;
+  background-image: url(../images/brand_bg.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 550px;
+}
+
+.brand_name {
+  margin: 100px;
+  margin-bottom: 0%;
+  padding: 50px 50px 0px 10px;
+  font-size: 100px;
+  color: whitesmoke;
+  text-shadow: black 1px 0 10px;
+}
+
+.brand_data {
+  margin-left: 105px;
+  padding: 0px 50px 50px 10px;
+  font-weight: bold;
+  color: #ffffff;
+  line-height: 30px;
+}
+
+.stack_info {
+  color: salmon;
+}
+
+.line1,
+.line2,
+.brand p {
+  margin: 0;
+}
