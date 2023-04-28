@@ -1,0 +1,54 @@
+#insights {
+  position: absolute;
+  top: 450px;
+  margin: 250px;
+  height: 350px;
+  background-image: url("https://static.vecteezy.com/system/resources/previews/003/031/764/original/blue-wide-background-with-linear-blurred-gradient-free-vector.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  box-shadow: 0px 0px 100px black;
+}
+
+.insights_heading {
+  margin: 10px;
+  font-weight: medium;
+  font-size: xx-large;
+  font-family: "Barlow", sans-serif;
+  color: seashell;
+  text-shadow: rgb(0, 0, 0) 1px 1px 10px;
+}
+
+.insights_body {
+  margin: 10px;
+  margin-top: 20px;
+  font-family: "Work Sans", sans-serif;
+  text-align: justify;
+  line-height: 30px;
+  width: 400px;
+}
+
+.insight_right {
+  margin: 20px;
+  margin-left: 0px;
+  padding-top: 55px;
+  font-size: 20px;
+  text-align: justify;
+  font-weight: bolder;
+  text-shadow: rgb(255, 255, 255) 0px 0 3px;
+}
+
+.insight_content01 {
+  border-bottom: 50px solid #000;
+  border-bottom-width: 2px;
+  border-bottom-color: #fff;
+  padding-bottom: 30px;
+}
+
+.insight_content02 {
+  padding-top: 30px;
+}
+
+.garbage {
+  opacity: 0;
+}
