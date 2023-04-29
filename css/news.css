@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@500&display=swap");
+
+.news_heading {
+  margin-top: 400px;
+  background: rgba(221, 228, 17, 0.514);
+  padding: 30px 0px 60px 0px;
+  align-items: center;
+}
+
+.news_heading h1 {
+  font-family: "Barlow", sans-serif;
+  font-size: 40px;
+  padding-left: 75px;
+}
+
+.news_main {
+  padding: 10px 75px 0px 75px;
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 21%;
+  gap: 30px;
+  overflow-x: scroll;
+  overscroll-behavior-inline: contain;
+  scroll-snap-type: x mandatory;
+}
+
+.news {
+  background: rgba(126, 128, 8, 0.466);
+  padding: 10px;
+  text-align: justify;
+  scroll-snap-align: center;
+}
+
+.news img {
+  inline-size: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+
+.news img,
+.news p {
+  transition: transform 0.5s;
+  font-family: "Montserrat", sans-serif;
+}
+
+.news:hover img,
+.news:hover p {
+  transform: scale(1.25);
+}
+
+.news_main::-webkit-scrollbar {
+  display: none;
+}
+
+.news_main::before,
+.news_main::after {
+  background: linear-gradient(
+    to right,
+    rgba(221, 228, 17, 1) 0%,
+    rgba(221, 228, 17, 0) 100%
+  );
+  content: "";
+  height: 45%;
+  position: absolute;
+  top: 1300px;
+  width: 10%;
+  z-index: 2;
+}
+
+.news_main::before {
+  left: 0;
+}
+
+.news_main::after {
+  right: 0;
+  transform: rotateZ(180deg);
+}
