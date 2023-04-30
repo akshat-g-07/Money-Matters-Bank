@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@500&display=swap");
+
+#client_testimonial {
+  margin: 100px 0px;
+  padding: 50px 200px;
+  height: 400px;
+}
+
+#client_testimonial h1 {
+  font-family: "Barlow", sans-serif;
+  font-size: 40px;
+}
+
+.person {
+  text-align: right;
+  font-style: italic;
+  padding-top: 50px;
+}
+
+.ct_main {
+  margin: auto;
+  width: auto;
+  height: auto;
+  padding: 10px 75px 10px 75px;
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 100%;
+  gap: 30px;
+  overflow-x: scroll;
+  overscroll-behavior-inline: contain;
+  scroll-snap-type: x mandatory;
+}
+
+.ct {
+  background: rgba(126, 128, 8, 0.466);
+  padding: 50px;
+  text-align: justify;
+  scroll-snap-align: center;
+  font-size: 25px;
+  animation: scroll 120s linear infinite;
+  font-family: "Playfair Display SC", serif;
+}
+
+.ct_main:hover {
+  animation-play-state: paused;
+}
+
+.ct_main::-webkit-scrollbar {
+  display: none;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-775px * 12));
+  }
+}
