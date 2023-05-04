@@ -1,0 +1,13 @@
+#about_us {
+  margin: 100px;
+  padding: 50px;
+  border: 20px;
+  border-radius: 10px;
+  text-align: justify;
+  font-size: 25px;
+  background-color: rgba(61, 165, 70, 0.4);
+}
+
+#about_us h1 {
+  font-family: "Barlow", sans-serif;
+}
