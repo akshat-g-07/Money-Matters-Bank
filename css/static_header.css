@@ -1,0 +1,14 @@
+.logo_brand {
+  display: flex;
+  box-shadow: 0px 0px 100px black;
+  padding: 0px 20px;
+  align-items: center;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  letter-spacing: 2px;
+  font-size: 30px;
+}
+
+.logo {
+  width: 7.5%;
+  padding: 0px 35px;
+}
