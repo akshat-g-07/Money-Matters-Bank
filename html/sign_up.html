@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Sign Up - Money Matters Bank</title>
+    <link rel="stylesheet" href="../css/sign_up.css" />
+    <link rel="stylesheet" href="../css/static_header.css" />
+    <link rel="stylesheet" href="../css/footer.css" />
+  </head>
+  <body>
+    <div class="header_div">
+      <header class="header_class">
+        <div class="logo_brand">
+          <img src="../images/logo_01.png" class="logo" />
+          <div class="brand">
+            <p>
+              <a
+                href="./landing_page.html"
+                style="text-decoration: none; color: black"
+                >MMB</a
+              >
+            </p>
+          </div>
+        </div>
+      </header>
+    </div>
+    <section>
+      <form
+        action=""
+        name="registerationform"
+        onsubmit="return validateForm()"
+        method="get"
+      >
+        <h2>Register</h2>
+        <div class="name">
+          <input required type="text" placeholder="First Name" />
+          <input required type="text" placeholder="Last Name" />
+        </div>
+        <div class="dob_phno">
+          <input
+            required
+            type="date"
+            placeholder="Date Of Birth"
+            name="dob"
+            min="1980-01-01"
+            max="2020-12-31"
+          />
+          <input required type="tel" placeholder="Phone No." name="phoneno" />
+        </div>
+        <div class="gender">
+          Gender:
+          <div class="gender_div">
+            <input
+              required
+              type="radio"
+              id="male"
+              value="male"
+              name="gender"
+            />Male
+          </div>
+          <div class="gender_div">
+            <input
+              required
+              type="radio"
+              id="female"
+              value="female"
+              name="gender"
+            />Female
+          </div>
+        </div>
+        <div class="email">
+          <input
+            required
+            type="email"
+            placeholder="email@example.com"
+            name="email"
+          />
+        </div>
+        <div class="pass1">
+          <input
+            required
+            type="password"
+            placeholder="Choose your password"
+            name="fpass"
+          />
+        </div>
+        <div class="pass2">
+          <input
+            required
+            type="password"
+            placeholder="Confirm your password"
+            name="cpass"
+          />
+        </div>
+        <div class="links">
+          <a href="./landing_page.html">Home</a>
+          <a href="./sign_in.html">Sign In</a>
+        </div>
+        <div><span id="errorout"></span></div>
+        <button type="submit">
+          Register
+          <i class="uil uil-navigator"></i>
+        </button>
+      </form>
+    </section>
+    <footer>
+      <span>Made by</span>
+      <a
+        href="https://github.com/akshat-g-07"
+        target="_blank"
+        class="font_change"
+      >
+        <img src="..\Images\github logo.png" /><span class="footer_text"
+          >Akshat Garg,</span
+        ></a
+      >
+      <span>a budding Full Stack Professional</span>
+    </footer>
+    <script src="../js/form_validation.js"></script>
+  </body>
+</html>
