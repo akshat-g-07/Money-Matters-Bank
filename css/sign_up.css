@@ -1,0 +1,77 @@
+body {
+  background-image: url("https://static.vecteezy.com/system/resources/previews/003/031/764/original/blue-wide-background-with-linear-blurred-gradient-free-vector.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 76vh;
+}
+
+form {
+  padding: 25px;
+  background-color: white;
+  border-radius: 20px;
+}
+
+form div {
+  display: flex;
+  padding: 10px 0px;
+  justify-content: space-between;
+}
+
+.gender_div {
+  padding: 0;
+}
+
+input,
+button,
+form a,
+.gender {
+  margin: 0 10px;
+  display: flex;
+  justify-content: space-between;
+  height: 15px;
+  outline: none;
+}
+
+form a {
+  text-decoration: none;
+  color: rgba(255, 0, 0, 0.849);
+  text-shadow: 1px 1px 1px rgba(0, 255, 115, 0.747);
+  font-size: 15px;
+  margin-bottom: 0px;
+}
+
+input:hover,
+input:focus {
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.603);
+}
+
+button {
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+  height: 30px;
+  box-shadow: 5px 3px 15px black;
+  background-color: #ff4d00;
+  outline: none;
+  color: aliceblue;
+  transition: 0.15s linear;
+  margin-bottom: 20px;
+}
+
+button:hover {
+  cursor: pointer;
+  text-shadow: 0px 1px 5px gold;
+  scale: 1.05;
+}
+
+form span {
+  color: red;
+  font-size: 12px;
+  padding-left: 10px;
+}
