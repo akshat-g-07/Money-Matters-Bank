@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&display=swap");
+
+aside {
+  z-index: 2;
+  position: fixed;
+  top: 0;
+  left: -500px;
+  width: 500px;
+  height: 100%;
+  background: #cf9743;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  transition: left 1.5s ease-in-out;
+  box-shadow: 5px 0px 15px black;
+}
+
+#close_button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  border: none;
+  outline: none;
+  background-color: #00000000;
+  font-size: 25px;
+  color: red;
+  cursor: pointer;
+}
+
+#mid_layer {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  z-index: -1;
+  transition: z-index 2s linear;
+}
+
+aside > div {
+  margin: 10px 0px;
+  padding: 0px 40px;
+  background-color: #cca47770;
+  box-shadow: 0px 2px 10px black;
+}
+
+.all_transacs {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#deposit,
+#withdraw,
+#transfer {
+  height: 0px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: height 0.5s linear;
+  font-family: "Barlow", sans-serif;
+}
+
+#transaction_type {
+  -webkit-appearance: none;
+  border: none;
+  outline: none;
+  border-radius: 2px;
+  text-align: center;
+  padding: 10px;
+  font-family: "Comfortaa", cursive;
+  font-weight: 800;
+  font-size: medium;
+}
+
+#transaction_type > option {
+  font-weight: 800;
+  font-size: small;
+}
+
+.deposit_heading,
+.withdraw_heading,
+.transfer_heading {
+  margin-bottom: 5px;
+}
+
+.deposit_body,
+.withdraw_body,
+.transfer_ifsc_head,
+.transfer_accnt_head,
+.transfer_amnt_head {
+  margin-top: 0px;
+  margin-bottom: 5px;
+}
+
+.deposit_input,
+.withdraw_input,
+.transfer_amnt_input,
+.transfer_accnt_input,
+.transfer_ifsc_input {
+  margin-bottom: 15px;
+}
+
+#deposit_amnt,
+#withdraw_amnt,
+#transfer_amnt,
+#transfer_accnt,
+#transfer_ifsc {
+  text-align: center;
+}
