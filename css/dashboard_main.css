@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ysabeau:wght@500&display=swap");
+
+body {
+  background-image: url("https://static.vecteezy.com/system/resources/previews/003/031/764/original/blue-wide-background-with-linear-blurred-gradient-free-vector.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+section {
+  margin: 50px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.bank_balance {
+  margin-top: 20px;
+  display: flex;
+  font-size: 30px;
+  font-family: "Barlow", sans-serif;
+}
+
+.show_details {
+  display: flex;
+  align-items: center;
+  margin: 20px 0px;
+  padding: 20px 50px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 2px 25px black;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.show_details,
+.all_details {
+  font-family: "Roboto", sans-serif;
+  width: 50%;
+}
+
+.show_details,
+.all_details > div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.all_details > div {
+  padding: 10px 25px 5px;
+  border-bottom: 2px solid black;
+}
+
+.all_details {
+  height: 0;
+  overflow: hidden;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 2px 10px black;
+  transition: height 1s ease-out;
+}
+
+#transact_button {
+  margin: 20px;
+  cursor: pointer;
+  height: 40px;
+  font-weight: bold;
+  font-family: "Barlow", sans-serif;
+  border: none;
+  outline: none;
+  box-shadow: 0px 2px 10px black;
+}
