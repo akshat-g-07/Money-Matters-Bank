@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Dashboard - Money Matters Bank</title>
+    <link rel="stylesheet" href="../css/dashboard_header.css" />
+    <link rel="stylesheet" href="../css/dashboard_main.css" />
+    <link rel="stylesheet" href="../css/dashboard_aside.css" />
+    <link rel="stylesheet" href="../css/footer.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo_name">
+        <img src="../images/logo_01.png" />
+        <div>MMB</div>
+      </div>
+      <div class="heading_options">
+        <div>Dashboard</div>
+        <div>Transaction History</div>
+        <div style="opacity: 0">ATM</div>
+      </div>
+      <div class="user_settings">
+        <div>Welcome&nbsp;</div>
+        <div>
+          <div class="username_arrow">
+            <div class="username">Piro Flaer&nbsp;</div>
+            <div class="arrow"></div>
+          </div>
+          <div class="user_options">
+            <a href="../html/dashboard.html">Home</a>
+            <a href="#">Profile</a>
+            <a href="#">Log Out</a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section>
+      <div class="bank_balance">
+        <div>Total Balance:</div>
+        <div>5000</div>
+      </div>
+      <div class="show_details" id="showDetails" onclick="expandFunction()">
+        <div>Show Account Details</div>
+        <div class="arrow" id="arrow"></div>
+      </div>
+      <div class="all_details" id="allDetails">
+        <div>
+          <div>Account Holder Name</div>
+          <div>Piro Flaer</div>
+        </div>
+        <div>
+          <div>Account Number</div>
+          <div>20230426001</div>
+        </div>
+        <div>
+          <div>IFSC Code</div>
+          <div>20000707001</div>
+        </div>
+        <div>
+          <div>Registered E-mail</div>
+          <div>ppf@gemail.com</div>
+        </div>
+      </div>
+      <div class="transaction">
+        <button id="transact_button">Make A Transaction</button>
+      </div>
+    </section>
+    <div id="mid_layer"></div>
+    <aside id="aside_element">
+      <button id="close_button">X</button>
+      <select id="transaction_type" autofocus>
+        <option value="no_transaction">Choose Your Transaction</option>
+        <option value="deposit">Deposit</option>
+        <option value="withdraw">Withdraw</option>
+        <option value="transfer">Transfer</option>
+      </select>
+      <div class="all_transacs">
+        <div id="deposit">
+          <div class="deposit_heading"><h2>Make A Deposit</h2></div>
+          <div class="deposit_body">Enter Deposit Amount</div>
+          <div class="deposit_input">
+            <input type="text" required placeholder="0.00" id="deposit_amnt" />
+          </div>
+          <div class="deposit_button_div">
+            <button class="deposit_button" onclick="depositValidation()">
+              Deposit
+            </button>
+          </div>
+        </div>
+        <div id="withdraw">
+          <div class="withdraw_heading"><h2>Make A Withdraw</h2></div>
+          <div class="withdraw_body">Enter Withdraw Amount</div>
+          <div class="withdraw_input">
+            <input type="text" required placeholder="0.00" id="withdraw_amnt" />
+          </div>
+          <div class="withdraw_button_div">
+            <button class="withdraw_button" onclick="withdrawValidation()">
+              Withdraw
+            </button>
+          </div>
+        </div>
+        <div id="transfer">
+          <div class="transfer_heading"><h2>Make A Transfer</h2></div>
+          <div class="transfer_amnt_head">Enter Transfer Amount</div>
+          <div class="transfer_amnt_input">
+            <input type="text" required placeholder="0.00" id="transfer_amnt" />
+          </div>
+          <div class="transfer_accnt_head">Enter Transferee Account Number</div>
+          <div class="transfer_accnt_input">
+            <input
+              type="text"
+              required
+              placeholder="XXXXXXXXXXX"
+              id="transfer_accnt"
+            />
+          </div>
+          <div class="transfer_ifsc_head">Enter Transferee IFSC Code</div>
+          <div class="transfer_ifsc_input">
+            <input
+              type="text"
+              required
+              placeholder="XXXXXXXXXXX"
+              id="transfer_ifsc"
+            />
+          </div>
+          <div class="transfer_button_div">
+            <button class="transfer_button" onclick="transferValidation()">
+              Transfer
+            </button>
+          </div>
+        </div>
+      </div>
+      <div id="show_error"></div>
+    </aside>
+    <footer>
+      <span>Made by</span>
+      <a
+        href="https://github.com/akshat-g-07"
+        target="_blank"
+        class="font_change"
+      >
+        <img src="..\Images\github logo.png" /><span class="footer_text"
+          >Akshat Garg,</span
+        ></a
+      >
+      <span>a budding Full Stack Professional</span>
+    </footer>
+    <script src="../js/dashboard_main.js"></script>
+    <script src="../js/dashboard_aside.js"></script>
+  </body>
+</html>
